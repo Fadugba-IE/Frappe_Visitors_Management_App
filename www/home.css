@@ -1,0 +1,42 @@
+.main-section{
+    background: linear-gradient(rgba(3, 50, 61, 0.75), rgba(10, 10, 10, 0.75)), url("background.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar-brand{
+
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 1px #d9e5ec;
+}
+.navbar{
+    background: linear-gradient(to bottom right, rgb(24, 24, 63), #003349);
+}
+
+#login{
+    margin-left: 75%;
+}
+
+a{
+    color: white;
+}
+
+.banner-text{
+    padding-top: 12%;
+}
+
+.banner-text p{
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+    width: 55%;
+    margin-left: 27%;
+    text-shadow: 2px 2px 2px #ababab;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+}
+
+.btn{
+    font-size: 35px;
+    margin-left: 40%;
+}
