@@ -1,11 +1,12 @@
 {
  "actions": [],
  "autoname": "format: {visitors_name}-{date}",
- "creation": "2021-02-18 20:50:46.098705",
+ "creation": "2021-02-25 00:13:06.676575",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "visit_log_arrival",
   "date",
   "visitors_name",
   "phone_number",
@@ -14,86 +15,99 @@
   "time_of_entry",
   "whom_to_see",
   "passcode",
-  "time_of_departure",
   "amended_from"
  ],
  "fields": [
   {
+   "fieldname": "visit_log_arrival",
+   "fieldtype": "Link",
+   "label": "Visitor",
+   "options": "Visit Log Arrival"
+  },
+  {
+   "fetch_from": "visit_log_arrival.date",
    "fieldname": "date",
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "fetch_from": "visit_log_arrival.visitors_name",
    "fieldname": "visitors_name",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Visitor's Name",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "fetch_from": "visit_log_arrival.phone_number",
    "fieldname": "phone_number",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Phone Number",
    "options": "Phone",
+   "read_only": 1,
    "reqd": 1
   },
   {
-   "fieldname": "address",
-   "fieldtype": "Data",
-   "label": "Address",
-   "reqd": 1
-  },
-  {
+   "fetch_from": "visit_log_arrival.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
    "options": "Email",
+   "read_only": 1,
    "reqd": 1
   },
   {
+   "fetch_from": "visit_log_arrival.address",
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fetch_from": "visit_log_arrival.time_of_entry",
    "fieldname": "time_of_entry",
    "fieldtype": "Time",
    "label": "Time of Entry",
+   "read_only": 1,
    "reqd": 1
   },
   {
-   "fieldname": "passcode",
+   "fetch_from": "visit_log_arrival.whom_to_see",
+   "fieldname": "whom_to_see",
    "fieldtype": "Data",
-   "hidden": 1,
-   "in_list_view": 1,
-   "label": "Passcode"
+   "label": "Whom To See"
   },
   {
-   "fieldname": "time_of_departure",
-   "fieldtype": "Time",
-   "hidden": 1,
-   "label": "Time of Departure"
+   "fetch_from": "visit_log_arrival.passcode",
+   "fieldname": "passcode",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Passcode",
+   "read_only": 1
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Visit Log Arrival",
+   "options": "Visit Log Reception",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "whom_to_see",
-   "fieldtype": "Data",
-   "label": "Whom To See"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-02-25 00:34:13.297833",
+ "modified": "2021-02-25 00:28:02.927490",
  "modified_by": "Administrator",
  "module": "Visitors Management App",
- "name": "Visit Log Arrival",
+ "name": "Visit Log Reception",
  "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [

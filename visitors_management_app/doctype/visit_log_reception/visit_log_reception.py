@@ -5,10 +5,6 @@
 from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
-import random
 
-random_number = random.randint(100000, 999999)
-
-class VisitLogArrival(Document):
-	def before_save(self):
-		self.passcode = random_number
+class VisitLogReception(Document):
+	pass

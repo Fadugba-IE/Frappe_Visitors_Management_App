@@ -1,6 +1,6 @@
 {
  "actions": [],
- "autoname": "format:Visitor - {#}",
+ "autoname": "format: {visitors_name}-{date}",
  "creation": "2021-02-23 11:58:11.535684",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -21,7 +21,7 @@
   {
    "fieldname": "visit_log_arrival",
    "fieldtype": "Link",
-   "label": "Visit Log Arrival",
+   "label": "Visitor",
    "options": "Visit Log Arrival"
   },
   {
@@ -72,7 +72,7 @@
    "read_only": 1
   },
   {
-   "fetch_from": "visit-log-arrival.passcode",
+   "fetch_from": "visit_log_arrival.passcode",
    "fieldname": "passcode",
    "fieldtype": "Data",
    "in_list_view": 1,
@@ -97,7 +97,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2021-02-23 23:41:00.798387",
+ "modified": "2021-02-25 01:03:46.491975",
  "modified_by": "Administrator",
  "module": "Visitors Management App",
  "name": "Visit Log Departure",

@@ -1,0 +1,27 @@
+{
+ "add_total_row": 1,
+ "columns": [],
+ "creation": "2021-02-18 22:04:26.177317",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[],\"fields\":[[\"name\",\"Visit Log\"],[\"date\",\"Visit Log\"],[\"serial_no\",\"Visit Log\"],[\"visitors_name\",\"Visit Log\"],[\"phone_number\",\"Visit Log\"],[\"address\",\"Visit Log\"],[\"time_of_entry\",\"Visit Log\"],[\"email\",\"Visit Log\"],[\"time_of_departure\",\"Visit Log\"]],\"order_by\":\"`tabVisit Log`.`modified` desc\",\"page_length\":20,\"column_widths\":{\"name\":120,\"date\":120,\"serial_no\":120,\"visitors_name\":120,\"phone_number\":120,\"address\":120,\"time_of_entry\":120,\"email\":120,\"time_of_departure\":120},\"group_by\":null}",
+ "modified": "2021-02-25 00:38:17.044774",
+ "modified_by": "Administrator",
+ "module": "Visitors Management App",
+ "name": "Daily Visits Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Visit Log Arrival",
+ "report_name": "Daily Visits Report",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}
